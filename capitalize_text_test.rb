@@ -13,4 +13,5 @@ class Capitalize_method < Minitest::Test
 	def test_capitalize
 		assert_equal("Hello", capitalize("hello"))
 	end
+
 end
