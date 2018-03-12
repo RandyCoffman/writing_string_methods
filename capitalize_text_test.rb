@@ -7,6 +7,11 @@ class Capitalize_method < Minitest::Test
 	end
 
 	def test_string
-		assert_equal(String, capitalize.class)
+		assert_equal(String, capitalize("hello").class)
 	end
+
+	def test_capitalize
+		assert_equal("Hello", capitalize("hello"))
+	end
+
 end
