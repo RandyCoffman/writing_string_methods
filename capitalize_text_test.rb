@@ -14,4 +14,16 @@ class Capitalize_method < Minitest::Test
 		assert_equal("Hello", capitalize("hello"))
 	end
 
+	def test_capitalize2
+		assert_equal("What is your name?", capitalize("what is your name?"))
+	end
+
+	def test_capitalize3
+		assert_equal("Do you like horses?!", capitalize("do you like horses?!"))
+	end
+
+	def test_capitalize4
+		assert_equal("I like to run", capitalize("i like to run"))
+	end
+
 end
