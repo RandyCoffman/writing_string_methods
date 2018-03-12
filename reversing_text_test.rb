@@ -7,7 +7,11 @@ class Reverse_method < Minitest::Test
 	end
 
 	def test_string
-		assert_equal(String, reverse.class)
+		assert_equal(String, reverse("abc").class)
+	end
+
+	def test_reverse
+		assert_equal("olleh", reverse("hello"))
 	end
 
 end
