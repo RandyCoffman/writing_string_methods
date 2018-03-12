@@ -14,4 +14,15 @@ class Reverse_method < Minitest::Test
 		assert_equal("olleh", reverse("hello"))
 	end
 
+	def test_reverse2
+		assert_equal("!?amall ym htiw gniod uoy era tahw", reverse("what are you doing with my llama?!"))
+	end
+
+	def test_reverse3
+		assert_equal("nekcihc ym hcuot t'nod", reverse("don't touch my chicken"))
+	end
+
+	def test_reverse4
+		assert_equal("etam olle", reverse("ello mate"))
+	end
 end
